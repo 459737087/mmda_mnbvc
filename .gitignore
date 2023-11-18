@@ -124,3 +124,6 @@ docs/
 .devcontainer/
 SymbolScraper/
 .coverage.*
+examples/my/e5910c027af0ee9c1901c57f6579d903aedee7f4.xml
+examples/grobid_augment_existing_document_parser/e5910c027af0ee9c1901c57f6579d903aedee7f4.xml
+examples/grobid_augment_existing_document_parser/output.md

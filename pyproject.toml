@@ -81,6 +81,11 @@ lp_predictors = [
     'torchvision',
     'effdet',
 ]
+paddle_predictors = [
+    'shapely',
+    'pyclipper',
+    'paddlepaddle'
+]
 hf_predictors = [
     'torch',
     'transformers',

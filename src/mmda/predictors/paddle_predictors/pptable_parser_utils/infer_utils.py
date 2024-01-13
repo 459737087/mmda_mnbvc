@@ -9,8 +9,8 @@ from paddle import inference
 # from src.utils.pptable_parser_utils.post_process import *
 # from src.utils.pptable_parser_utils.operators import *
 
-from pptable_parser_utils.post_process import *
-from pptable_parser_utils.operators import *
+from mmda.predictors.paddle_predictors.pptable_parser_utils.post_process import *
+from mmda.predictors.paddle_predictors.pptable_parser_utils.operators import *
 
 def str2bool(v):
     return v.lower() in ("true", "yes", "t", "y", "1")

@@ -7,19 +7,21 @@
 """
 import os
 import sys
-parent_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
-print(parent_dir)
-sys.path.insert(0, parent_dir)
+# parent_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))))
+# print(parent_dir)
+# os.chdir(parent_dir)
+# sys.path.insert(0, parent_dir)
+import base64
 import time
 import copy
 import numpy as np
 import cv2
 
-import pptable_parser_utils.predict_det as predict_det
-import pptable_parser_utils.predict_rec as predict_rec
-from pptable_parser_utils.utility import parse_args, sorted_boxes
-from pptable_parser_utils.matcher_utils import TableMatch
-from pptable_parser_utils.predict_structure import TableStructurer
+import mmda.predictors.paddle_predictors.pptable_parser_utils.predict_det as predict_det
+import mmda.predictors.paddle_predictors.pptable_parser_utils.predict_rec as predict_rec
+from mmda.predictors.paddle_predictors.pptable_parser_utils.utility import parse_args, sorted_boxes
+from mmda.predictors.paddle_predictors.pptable_parser_utils.matcher_utils import TableMatch
+from mmda.predictors.paddle_predictors.pptable_parser_utils.predict_structure import TableStructurer
 
 
 def base64_to_cv2(base64_str):
@@ -145,7 +147,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     img_path = args.img_path
     table_predictor = TablePredictor()
-    import base64
     def image_to_base64(image_path: str) -> str:
             """
             Convert an image to its base64 representation.

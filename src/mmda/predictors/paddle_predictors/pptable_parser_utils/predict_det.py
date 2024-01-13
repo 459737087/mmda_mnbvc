@@ -2,11 +2,11 @@ import sys
 import time
 import numpy as np
 
-from pptable_parser_utils.logger import get_logger
-from pptable_parser_utils.infer_utils import create_predictor, get_infer_gpuid, transform, \
+from mmda.predictors.paddle_predictors.pptable_parser_utils.logger import get_logger
+from mmda.predictors.paddle_predictors.pptable_parser_utils.infer_utils import create_predictor, get_infer_gpuid, transform, \
                                                        build_post_process, create_operators
-from pptable_parser_utils.post_process import *
-from pptable_parser_utils.operators import *
+from mmda.predictors.paddle_predictors.pptable_parser_utils.post_process import *
+from mmda.predictors.paddle_predictors.pptable_parser_utils.operators import *
 logger = get_logger()
 
     

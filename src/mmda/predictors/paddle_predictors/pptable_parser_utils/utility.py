@@ -1,4 +1,4 @@
-from pptable_parser_utils.infer_utils import str2bool, str2int_tuple, init_args as infer_args
+from mmda.predictors.paddle_predictors.pptable_parser_utils.infer_utils import str2bool, str2int_tuple, init_args as infer_args
 
 
 def init_args():
